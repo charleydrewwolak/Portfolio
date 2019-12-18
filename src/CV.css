@@ -1,0 +1,16 @@
+.CV {
+    text-align: left;
+    padding: 20px;
+    width: 40%;
+}
+.left {
+    width: 10vw;
+    padding-left: 1vw;
+}
+.CV {
+    font-size: 12px;
+}
+h4 {
+    font-size: 18px;
+    padding-bottom: 2px; 
+  }
