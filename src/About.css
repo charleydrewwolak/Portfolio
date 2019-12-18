@@ -1,0 +1,22 @@
+.About {
+    padding: 20%;
+    padding-top: 10px;
+}
+.About img {
+ width: 230px;
+ display: block;
+ float: left;
+ padding-right: 10px;
+ padding-top: 8px;
+}
+
+.Bio {
+    float: left;
+    display: block;
+    padding-top: 20px;
+}
+
+.t {
+    float: left;
+    display: block;
+}
