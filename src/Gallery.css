@@ -1,0 +1,45 @@
+.navs {
+    display: block;
+    position: fixed;
+    float: left;
+    width: 150px;
+    background-color: lightgray;
+    height:100vh;
+    margin-top: 8px;
+}
+
+.gallery {
+    display: block;
+    float: left;
+    width: 70%;
+    padding-left: 30px;
+    margin-left: 150px;
+
+}
+.carousel.slide {
+    width: 450px;
+}
+.gallery img{
+    height: 300px;
+
+}
+
+.entry {
+    padding-bottom: 20px;
+}
+
+.navs button {
+    background-color:lightgray;
+    border: none;
+    margin-top: 20px;
+    margin: 10px;
+    padding: 0px;
+    border-bottom: 2px solid;
+    border-color: lightgray;
+    
+}
+
+.navs button:hover {
+    border-bottom: 2px solid;
+    border-color: blue;
+  }

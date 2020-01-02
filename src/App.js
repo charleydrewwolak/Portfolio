@@ -12,7 +12,7 @@ import { Nav, Navbar } from "react-bootstrap";
 function App() {
   return (
     <div className="App">
-      <Navbar bg="light" variant="light">
+      <Navbar fixed="top" bg="light" variant="light">
         <Navbar.Brand href="#">Charley Drew-Wolak</Navbar.Brand>
 
         <Nav className="mr-auto">
