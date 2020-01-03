@@ -43,14 +43,46 @@ class Gallery extends Component {
         {
           title: "Metrosexual Vase",
           files: ["MetrosexualVase1.jpeg", "MetrosexualVase2.jpeg"],
-          materials: "Steal, Spraypaint, Glitter",
+          materials: "Steal, Spraypaint",
           year: "2019",
           shows: "Strange Company, Penald NC",
           info: ""
         }
-      ]
+      ],
+      GraphicDesign: [
+        {
+          title: "",
+          files: [""],
+          materials: "Steal, Spraypaint, Glitter",
+          year: "",
+          shows: "",
+          info: ""
+        },
+      ],
+      CAD: [
+        {
+          title: "Louisville Bowl",
+          files: [""],
+          materials: "Steal, Spraypaint, Glitter",
+          year: "2016",
+          shows: "",
+          info: "Ispired by the Mercer building's architecture.  "
+        },
+      ],
+      Photography: [
+        {
+          title: "",
+          files: [""],
+          materials: "Steal, Spraypaint, Glitter",
+          year: "",
+          shows: "",
+          info: ""
+        },
+      ],
+
     };
   }
+
   render() {
     return (
       <div className="Gal">
