@@ -1,19 +1,22 @@
-
-import React, { Component } from 'react'
-
+import React, { Component } from "react";
+import { Form, Button } from "react-bootstrap";
+import './Contact.css'
 
 class Contact extends Component {
   render() {
     return (
-    <div className="contact">
-        
-        Contact me
-    </div>
-
-    )
+      <div className="contact">
+        <h2>Contact</h2>
+        <p>
+          Email: charleydrewwolak@gmail.com
+          <br/>
+          Instagram: @charleydrewwolak
+          <br/>
+        </p>
+      
+      </div>
+    );
   }
-
 }
 
-export default Contact
-
+export default Contact;

@@ -1,7 +1,16 @@
 .Body {
-
-  margin-top: 54px
+  margin-top: 53px;
+  margin-right: 4%;
 }
 .Body p {
   line-height: 30px;
 }
+
+.nav-link.active {
+  color: rebeccapurple !important;
+}
+.App img {
+  padding-bottom: 3px;
+}
+
+

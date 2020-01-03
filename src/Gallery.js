@@ -99,13 +99,13 @@ class Gallery extends Component {
       <div className="Gal">
         <div className="navs">
           <button id="Fabrication" onClick={() => this.changePage("Fabrication")}>Fabrication</button>
-          <br/>
+          
           <button id="GraphicDesign" onClick={() => this.changePage("GraphicDesign")}>Graphic Design</button>
-          <br/>
+          
           <button id="Photography" onClick={() => this.changePage("Photography")}>Photography</button>
-          <br/>
+          
           <button id="CAD" onClick={() => this.changePage("CAD")}>CAD</button>
-          <br/>
+          
         </div>
         
         <div className="gallery">

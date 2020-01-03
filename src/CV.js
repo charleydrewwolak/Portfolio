@@ -101,6 +101,7 @@ class CV extends Component {
   render() {
     return (
       <div className="CV">
+        <h2>Curriculum Vitae</h2>
         <h4>Education</h4>
             <tr>
                 <td className="left">2016 - Present</td>

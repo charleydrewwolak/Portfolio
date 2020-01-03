@@ -6,3 +6,29 @@
     padding: 80px;
     padding-top: 40px;
 }
+
+.carousel-indicators {
+    margin-left: 9vw;
+    justify-content: left;
+    color: grey;
+    transform: translateY(30px);
+
+}
+.carousel-indicators  li{
+    background-color: grey !important;
+
+
+}
+
+.carousel-control-prev {
+    display: none;
+}
+.carousel-control-next {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .Home {
+        padding: 4px;
+    }
+}

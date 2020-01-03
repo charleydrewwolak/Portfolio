@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Navbar fixed="top" bg="light" variant="light">
-        <Navbar.Brand href="#"><img height="35px" src={require("./Logo.svg")}/> Charley Drew-Wolak </Navbar.Brand>
+        <Navbar.Brand href="#"><img height="35px" src={require("./Logo.svg")}/> CHARLEY DREW-WOLAK </Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="#cv">CV</Nav.Link>
           <Nav.Link href="#gallery">Gallery</Nav.Link>
