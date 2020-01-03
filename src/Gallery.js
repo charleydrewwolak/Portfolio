@@ -85,9 +85,12 @@ class Gallery extends Component {
   }
 
   changePage = (p) => {
+    document.getElementById(this.state.page).classList.remove("highlight")
     let page = this.page
     page = p
+    document.getElementById(page).classList.add("highlight")
     this.setState({ page })
+    
   }
   
 
@@ -95,13 +98,13 @@ class Gallery extends Component {
     return (
       <div className="Gal">
         <div className="navs">
-          <button onClick={() => this.changePage("Fabrication")}>Fabrication</button>
+          <button id="Fabrication" onClick={() => this.changePage("Fabrication")}>Fabrication</button>
           <br/>
-          <button onClick={() => this.changePage("GraphicDesign")}>Graphic Design</button>
+          <button id="GraphicDesign" onClick={() => this.changePage("GraphicDesign")}>Graphic Design</button>
           <br/>
-          <button onClick={() => this.changePage("Photography")}>Photography</button>
+          <button id="Photography" onClick={() => this.changePage("Photography")}>Photography</button>
           <br/>
-          <button onClick={() => this.changePage("CAD")}>CAD</button>
+          <button id="CAD" onClick={() => this.changePage("CAD")}>CAD</button>
           <br/>
         </div>
         
