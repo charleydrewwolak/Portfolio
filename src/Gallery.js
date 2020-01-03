@@ -6,6 +6,7 @@ class Gallery extends Component {
   constructor() {
     super();
     this.state = {
+      page: "Fabrication",
       Fabrication: [
         {
           title: "Vascular",
@@ -51,30 +52,30 @@ class Gallery extends Component {
       ],
       GraphicDesign: [
         {
-          title: "",
-          files: [""],
-          materials: "Steal, Spraypaint, Glitter",
-          year: "",
+          title: "Dance Alloy: Time and Tide", 
+          files: ["Alloy1.png", "Alloy2.png"],
+          materials: "Photoshop",
+          year: "2018",
           shows: "",
-          info: ""
+          info: "Winner of poster contest."
         },
       ],
       CAD: [
         {
           title: "Louisville Bowl",
-          files: [""],
+          files: ["RhinoBowl.jpg"],
           materials: "Steal, Spraypaint, Glitter",
           year: "2016",
           shows: "",
-          info: "Ispired by the Mercer building's architecture.  "
+          info: "Inspired by the Mercer building's architecture.  "
         },
       ],
       Photography: [
         {
-          title: "",
-          files: [""],
-          materials: "Steal, Spraypaint, Glitter",
-          year: "",
+          title: "Oil Free",
+          files: ["OilFree.png"],
+          materials: "Soap, Oil, Developed Print",
+          year: "2018",
           shows: "",
           info: ""
         },
@@ -83,28 +84,35 @@ class Gallery extends Component {
     };
   }
 
+  changePage = (p) => {
+    let page = this.page
+    page = p
+    this.setState({ page })
+  }
+  
+
   render() {
     return (
       <div className="Gal">
         <div className="navs">
-          <button>Fabrication</button>
+          <button onClick={() => this.changePage("Fabrication")}>Fabrication</button>
           <br/>
-          <button>Graphic Design</button>
+          <button onClick={() => this.changePage("GraphicDesign")}>Graphic Design</button>
           <br/>
-          <button>Photography</button>
+          <button onClick={() => this.changePage("Photography")}>Photography</button>
           <br/>
-          <button>CAD</button>
+          <button onClick={() => this.changePage("CAD")}>CAD</button>
           <br/>
         </div>
         
         <div className="gallery">
         <h2>Gallery</h2>
-          {this.state.Fabrication.map(m => (
+          {this.state[this.state.page].map(m => (
             <div className="entry">
               <Carousel>
                 {m.files.map(i => (
                   <Carousel.Item>
-                    <img src={require(`./work/Fabrication/${i}`)} />
+                    <img src={require(`./work/${this.state.page}/${i}`)} />
                   </Carousel.Item>
                 ))}
               </Carousel>
