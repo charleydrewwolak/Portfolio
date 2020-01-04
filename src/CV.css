@@ -1,0 +1,24 @@
+.CV {
+    text-align: left;
+    width: 60%;
+    padding-left: 14%;
+    padding-top: 10px;
+}
+.left {
+    width: 10vw;
+    padding-left: 1vw;
+}
+.CV {
+    font-size: 14px;
+}
+h4 {
+    font-size: 18px;
+    padding-bottom: 2px; 
+  }
+
+@media only screen and (max-width: 700px) {
+    .CV {
+        padding-left: 1%;
+        width: 95%;
+    }
+}
