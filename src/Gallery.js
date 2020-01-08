@@ -10,7 +10,7 @@ class Gallery extends Component {
       Fabrication: [
         {
           title: "Vascular",
-          files: ["Vascular1.jpg", "Vascular2.jpg", "Vascular3.jpg"],
+          files: ["Vascular1.jpg", "Vascular3.jpg", "Vascular5.jpg"],
           materials: "Steel",
           year: "2019",
           shows: "Strange Company, Penland NC",
@@ -19,7 +19,7 @@ class Gallery extends Component {
         },
         {
           title: "Ajna Broach",
-          files: ["AjnaBroach1.jpeg", "AjnaBroach2.jpg"],
+          files: ["AjnaBroach1.jpg", "AjnaBroach2.jpg"],
           materials: "Steel, Silver",
           shows: "Strange Company, Penland NC",
           year: "2019",
@@ -27,7 +27,7 @@ class Gallery extends Component {
         },
         {
           title: "Ajna",
-          files: ["Ajna1.jpeg", "Ajna2.jpeg"],
+          files: ["Ajna1.jpg", "Ajna2.jpg"],
           materials: "Steel",
           shows: "Strange Company, Penland NC",
           year: "2019",
@@ -35,7 +35,7 @@ class Gallery extends Component {
         },
         {
           title: "Gay Wattering Can",
-          files: ["GayWatteringcan1.jpeg"],
+          files: ["GayWatteringcan1.jpg"],
           materials: "Steel, Spraypaint, Glitter",
           year: "2019",
           shows: "Strange Company, Penland NC",
@@ -43,7 +43,7 @@ class Gallery extends Component {
         },
         {
           title: "Metrosexual Vase",
-          files: ["MetrosexualVase1.jpeg", "MetrosexualVase2.jpeg"],
+          files: ["MetrosexualVase1.jpg", "MetrosexualVase2.jpg"],
           materials: "Steel, Spraypaint",
           year: "2019",
           shows: "Strange Company, Penland NC",
@@ -74,10 +74,18 @@ class Gallery extends Component {
           info: ""
         },
         {
+          title: "Flux",
+          files: ["Flux.jpg", "Flux1.jpg", "Flux2.jpg"],
+          materials: "Copper, Enamel, PLA, Spray Paint, Rope",
+          year: "2018",
+          shows: "KMAC Couture",
+          info: "Designed shoulder piece in collaboration with Brent Drew-Wolak’s Dress. Two 3D printed hollow vessels on each shoulder store indigo dye. On the runway, dye was released into dress."
+        },
+        {
           title: "Life of the Mountains",
           files: ["Banjo.gif", "Banjo1.jpg", "Banjo2.jpg"],
           materials: "Copper, Enamel, Acrylic, Wood",
-          year: "2018",
+          year: "2017",
           shows: "",
           info: "My intent with this piece was symbolize how music can serve as a window. Appalachian music brings a community together to dance, sing, and celebrate life. It also expresses and preserves a history of hardship, exploitation, resistance, and resilience. On one side of Pine Mountain you see breath taking views of rolling green mountains as you drive down winding roads to Cowan Creek. Drive down the opposite direction and you see a void of dirt and destruction: nature strip mined away, layer by layer."
         },
@@ -92,15 +100,71 @@ class Gallery extends Component {
           shows: "",
           info: "Winner of poster contest."
         },
+        {
+          title: "Squirrel Hacks", 
+          files: ["SquirrelHacks.png","SquirrelHacks1.png"],
+          materials: "Rhino, Illustrator",
+          year: "2018",
+          shows: "",
+          info: "Logo and poster for Squirrel Hacks Hackathon at Earlham College"
+        },
+        {
+          title: "Scarab Button", 
+          files: ["ScarabButton.png"],
+          materials: "Photoshop",
+          year: "2018",
+          shows: "",
+          info: "Button design for the Egypt Breakout at the Joseph Moore Museum"
+        },
+        {
+          title: "Darwin Day Poster", 
+          files: ["Charles-Darwin.jpg"],
+          materials: "Illustrator",
+          year: "2018",
+          shows: "",
+          info: "Poster for Darwin Day event at the Joseph Moore Museum"
+        },
+        {
+          title: "Hayes Arboretum Ad", 
+          files: ["Hayes.png"],
+          materials: "Pixlemator",
+          year: "2017",
+          shows: "",
+          info: ""
+        },
       ],
       CAD: [
         {
+          title: "Stairwell",
+          files: ["Stairwell1.jpg", "Stairwell2.jpg", "Stairwell3.jpg"],
+          materials: "Rhino",
+          year: "2019",
+          shows: "",
+          info: "Designed and fabricated in collaboration with William Clay and Dani"
+        },
+        {
           title: "Louisville Bowl",
           files: ["RhinoBowl.jpg"],
-          materials: "Steel, Spraypaint, Glitter",
+          materials: "Rhino",
           year: "2016",
           shows: "",
           info: "Inspired by the Mercer building's architecture.  "
+        },
+        {
+          title: "Planets",
+          files: ["Planets.jpg"],
+          materials: "Rhino",
+          year: "2016",
+          shows: "",
+          info: ""
+        },
+        {
+          title: "Chair",
+          files: ["Chair2.jpg", "Chair1.jpg"],
+          materials: "Rhino",
+          year: "2016",
+          shows: "",
+          info: ""
         },
       ],
       Photography: [
@@ -168,14 +232,13 @@ class Gallery extends Component {
           shows: "",
           info: "8x10"
         },
-        
-   
       ],
-
     };
   }
 
   changePage = (p) => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0;
     document.getElementById(this.state.page).classList.remove("highlight")
     let page = this.page
     page = p
@@ -191,9 +254,9 @@ class Gallery extends Component {
         <div className="navs">
           <button id="Fabrication" onClick={() => this.changePage("Fabrication")}>Fabrication</button>
           
-          <button id="GraphicDesign" onClick={() => this.changePage("GraphicDesign")}>Graphic Design</button>
-          
           <button id="Photography" onClick={() => this.changePage("Photography")}>Photography</button>
+
+          <button id="GraphicDesign" onClick={() => this.changePage("GraphicDesign")}>Graphic Design</button>
           
           <button id="CAD" onClick={() => this.changePage("CAD")}>CAD</button>
           
@@ -210,18 +273,14 @@ class Gallery extends Component {
                   </Carousel.Item>
                 ))}
               </Carousel>
-
               <br />
               <strong>{m.title}</strong>
               <br />
-              <i>{m.materials}</i>
-              <p>
-                {m.year}
-                <br /> {m.shows}
-              </p>
-
-              <br />
-              <p>{m.info}</p>
+              {m.materials ? (<i>{m.materials}</i>) : (null)}
+              {m.year ? (<p>{m.year}</p>) : null}
+              {m.shows ? (<p>{m.shows}</p>) : null}
+              {m.info ? (<p>{m.info}</p>): null}
+              <br/><br/><br/>
             </div>
           ))}
         </div>
@@ -230,4 +289,4 @@ class Gallery extends Component {
   }
 }
 
-export default Gallery;
+export default Gallery; 

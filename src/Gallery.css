@@ -36,14 +36,21 @@
     margin-top: 20px;
     margin: 10px;
     padding: 0px;
-    outline: none;
-
-    
+    outline: none;    
 }
+
+.gallery p {
+    margin-bottom: 0;
+}
+
 
 .navs button:hover {
     color:rebeccapurple 
   }
+
+.gallery p {
+    width:60%;
+}
 
   @media only screen and (max-width: 700px) {
     .navs {
@@ -60,5 +67,8 @@
     }
     .navs button {
         font-size: 11px
+    }
+    .gallery p {
+        width:100%;
     }
 }
