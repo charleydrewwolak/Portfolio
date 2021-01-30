@@ -95,6 +95,50 @@ class Gallery extends Component {
             "My intent with this piece was symbolize how music can serve as a window. Appalachian music brings a community together to dance, sing, and celebrate life. It also expresses and preserves a history of hardship, exploitation, resistance, and resilience. On one side of Pine Mountain you see breath taking views of rolling green mountains as you drive down winding roads to Cowan Creek. Drive down the opposite direction and you see a void of dirt and destruction: nature strip mined away, layer by layer.",
         },
       ],
+      CAD: [
+        {
+          title: "Hummus Bar with Light Box",
+          files: ["hb2.jpeg", "hb1.jpeg"],
+          materials: "Solidworks, Stainless Steel, ", 
+          year: "2021",
+          shows: "",
+          info:
+            "Full production drawing before fabrication at City Metal Works. Each part is cut out of sheet metal, bent into shape, and welded together ny fabrication team.",
+        },
+        {
+          title: "Stairwell",
+          files: ["Stairwell1.jpg", "Stairwell2.jpg", "Stairwell3.jpg"],
+          materials: "Rhino",
+          year: "2019",
+          shows: "",
+          info:
+            "Designed and fabricated in collaboration with William Clay and Dani",
+        },
+        {
+          title: "Louisville Bowl",
+          files: ["RhinoBowl.jpg"],
+          materials: "Rhino",
+          year: "2016",
+          shows: "",
+          info: "Inspired by the Mercer building's architecture.  ",
+        },
+        {
+          title: "Planets",
+          files: ["Planets.jpg"],
+          materials: "Rhino",
+          year: "2016",
+          shows: "",
+          info: "",
+        },
+        {
+          title: "Chair",
+          files: ["Chair2.jpg", "Chair1.jpg"],
+          materials: "Rhino",
+          year: "2016",
+          shows: "",
+          info: "",
+        },
+      ],
       GraphicDesign: [
         {
           title: "Dance Alloy: Time and Tide",
@@ -135,41 +179,6 @@ class Gallery extends Component {
           files: ["Hayes.png"],
           materials: "Pixlemator",
           year: "2017",
-          shows: "",
-          info: "",
-        },
-      ],
-      CAD: [
-        {
-          title: "Stairwell",
-          files: ["Stairwell1.jpg", "Stairwell2.jpg", "Stairwell3.jpg"],
-          materials: "Rhino",
-          year: "2019",
-          shows: "",
-          info:
-            "Designed and fabricated in collaboration with William Clay and Dani",
-        },
-        {
-          title: "Louisville Bowl",
-          files: ["RhinoBowl.jpg"],
-          materials: "Rhino",
-          year: "2016",
-          shows: "",
-          info: "Inspired by the Mercer building's architecture.  ",
-        },
-        {
-          title: "Planets",
-          files: ["Planets.jpg"],
-          materials: "Rhino",
-          year: "2016",
-          shows: "",
-          info: "",
-        },
-        {
-          title: "Chair",
-          files: ["Chair2.jpg", "Chair1.jpg"],
-          materials: "Rhino",
-          year: "2016",
           shows: "",
           info: "",
         },
@@ -267,6 +276,9 @@ class Gallery extends Component {
           >
             Fabrication
           </button>
+          <button id="CAD" onClick={() => this.changePage("CAD")}>
+            CAD
+          </button>
 
           <button
             id="Photography"
@@ -282,9 +294,7 @@ class Gallery extends Component {
             Graphic Design
           </button>
 
-          <button id="CAD" onClick={() => this.changePage("CAD")}>
-            CAD
-          </button>
+          
         </div>
 
         <div className="gallery">
@@ -312,7 +322,6 @@ class Gallery extends Component {
           ))}
           <div id="Technology">
             <div className="entry">
-            
               <Carousel>
                 <Carousel.Item>
                   <img src={require("./work/Technology/Both.jpg")} />
@@ -325,23 +334,23 @@ class Gallery extends Component {
                 We’ve grown to depend on technology in every aspect of society.
                 As we continue to innovate, we find ways to expand human
                 function with digital. Vascular and Momentum visualize our
-                tethered relationship to technology. 
-                Vascular and Momentum blend
-                technological and human function. 
+                tethered relationship to technology. Vascular and Momentum blend
+                technological and human function.
                 <br />
-              <br />
-                This series was both my Senior Capstone at Earham College, and my entry for KMAC Couture.
+                <br />
+                This series was both my Senior Capstone at Earham College, and
+                my entry for KMAC Couture.
               </p>
               <br />
               <br />
               <br />
               <Carousel>
-              <Carousel.Item>
-                <iframe
-                src="https://drive.google.com/file/d/1buzweRP9ngOGXlCEmWfzryt4hNr3gzQG/preview"
-                width="840"
-                height="480"
-              ></iframe>
+                <Carousel.Item>
+                  <iframe
+                    src="https://drive.google.com/file/d/1buzweRP9ngOGXlCEmWfzryt4hNr3gzQG/preview"
+                    width="840"
+                    height="480"
+                  ></iframe>
                 </Carousel.Item>
                 <Carousel.Item>
                   <img src={require("./work/Technology/Momentum1.jpg")} />
@@ -359,23 +368,23 @@ class Gallery extends Component {
                 Steel, Boning, Led Strip (WS2812B), Arduino IDE, Teensy 4.0,
                 Accelerometer, Wire
               </p>
-              <p>Momentum responds directly
-                to movement, sending a wave of light cascading with each step.
-                Both pieces were featured in the Kentucky Museum of Craft’s
-                fashion show, KMAC Couture 2020.
-                </p>
+              <p>
+                Momentum responds directly to movement, sending a wave of light
+                cascading with each step. Both pieces were featured in the
+                Kentucky Museum of Craft’s fashion show, KMAC Couture 2020.
+              </p>
               <br />
               <br />
               <br />
             </div>
             <div className="entry">
               <Carousel>
-              <Carousel.Item>
-                <iframe
-                src="https://drive.google.com/file/d/1CPiON6NDUWutOunWaUqoMoIRVuqxqSe2/preview"
-                width="840"
-                height="480"
-              ></iframe>
+                <Carousel.Item>
+                  <iframe
+                    src="https://drive.google.com/file/d/1CPiON6NDUWutOunWaUqoMoIRVuqxqSe2/preview"
+                    width="840"
+                    height="480"
+                  ></iframe>
                 </Carousel.Item>
                 <Carousel.Item>
                   <img src={require("./work/Technology/Vascular1.jpg")} />
@@ -393,25 +402,25 @@ class Gallery extends Component {
                 Steel, Arduino IDE, Leds, Side Emmiting Fiber Optic Chord, Wire,
                 Fishing Line, Arduino Nano, Heart Beat Sensor
               </p>
-              <p>Vascular uses a heartbeat
-                sensor to measure the wearer’s heart rate and to replicate it
-                within pulsing red fiber optic veins.
-                </p>
+              <p>
+                Vascular uses a heartbeat sensor to measure the wearer’s heart
+                rate and to replicate it within pulsing red fiber optic veins.
+              </p>
               <br />
               <br />
               <br />
             </div>
             <div className="entry">
-            <Carousel>
+              <Carousel>
                 <Carousel.Item>
-                <iframe
-                src="https://drive.google.com/file/d/1CPiON6NDUWutOunWaUqoMoIRVuqxqSe2/preview"
-                width="840"
-                height="480"
-              ></iframe>
+                  <iframe
+                    src="https://drive.google.com/file/d/1CPiON6NDUWutOunWaUqoMoIRVuqxqSe2/preview"
+                    width="840"
+                    height="480"
+                  ></iframe>
                 </Carousel.Item>
               </Carousel>
-              
+
               <br />
               <strong>Wireless Movement Visuaizer Concept</strong>
               <br />

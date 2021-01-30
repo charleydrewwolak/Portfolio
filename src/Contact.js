@@ -10,8 +10,6 @@ class Contact extends Component {
         <p>
           Email: charleydrewwolak@gmail.com
           <br/>
-          Instagram: @charleydrewwolak
-          <br/>
         </p>
       
       </div>
