@@ -380,11 +380,7 @@ class Gallery extends Component {
             <div className="entry">
               <Carousel>
                 <Carousel.Item>
-                  <iframe
-                    src="https://drive.google.com/file/d/1CPiON6NDUWutOunWaUqoMoIRVuqxqSe2/preview"
-                    width="840"
-                    height="480"
-                  ></iframe>
+                <iframe src="https://drive.google.com/file/d/1zsCyGJK0pJfeEIMYgMpGPv0kKE-tXksP/preview" width="840" height="480"></iframe>
                 </Carousel.Item>
                 <Carousel.Item>
                   <img src={require("./work/Technology/Vascular1.jpg")} />

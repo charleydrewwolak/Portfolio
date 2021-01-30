@@ -5,11 +5,11 @@ class CV extends Component {
   constructor(){
     super();
     this.state = {
-      Exhibitions: [
+      Exhibitions: [ 
         {
-          year: "2019",
-          name: "Strange Company",
-          location: "Penland, NC, Penland School of Craft",
+          year: "2020",
+          name: "KMAC Couture 2020 “Star Stuff,”",
+          location: "Kentucky Museum of Craft, Louisville, KY",
           info: " ",
         },
         {
@@ -39,16 +39,10 @@ class CV extends Component {
       ],
       Experience: [
         {
-          year: "2017 - Present",
-          name: "Intro to 3D Fabrication",
-          location: "Earlham College",
-          info: "Teaching Assistant. Offer metalsmithing and CAD modeling help to 3D Fabrication students. Operate laser cutter and 3D printer. Maintain studio space. Prepare materials for class demonstrations and offer demonstrations.",
-        },
-        {
-          year: "2017 - Present",
-          name: "Joseph Moore Museum",
-          location: "Richmond, IN",
-          info: "Fabricator and Graphic Designer. ",
+          year: "2020 - Present",
+          name: "City Metal Works",
+          location: "Brooklyn, NY",
+          info: "Metal Fabrication Engineer and Designer. Draft and develop shop drawings using Autocad, Rhino, and Solid Works. Adapt drawings to be optimized for the waterjet cutter. Work with clients to design custom restaurant equipment and miscellaneous projects. Create production drawings and communicate the project with the fabrication team - where to bend, weld, cut, rivet, screw, etc. Create layouts for restaurant equipment using KCL and Auto quotes."
         },
         {
           year: "2019",
@@ -56,6 +50,19 @@ class CV extends Component {
           location: "Yangon, Myanmar",
           info: "Web Development Intern. Re-designed the website using React. https://precollegiateyangon.org/",
         },
+        {
+          year: "2019 – 2020",
+          name: "Intro to 3D Fabrication",
+          location: "Earlham College",
+          info: "Teaching Assistant. Offer metalsmithing and CAD modeling help to 3D Fabrication students. Operate laser cutter and 3D printer. Maintain studio space. Prepare materials for class demonstrations and offer demonstrations.",
+        },
+        {
+          year: "2017 - 2020",
+          name: "Joseph Moore Museum",
+          location: "Richmond, IN",
+          info: "Fabricator and Graphic Designer. ",
+        },
+
         {
           year: "2017 - 2019",
           name: "Bonner Community Fund",
@@ -84,15 +91,15 @@ class CV extends Component {
       Skills: [
         {
           type: "SOFTWARE",
-          kinds: "Adobe Suite: [Photoshop, Illustrator, and InDesign], Rhino, Cura, 123D Make, Arduino IDE, App Inventor",
+          kinds: "Adobe Suite: [Photoshop, Illustrator, and InDesign], Solid Works, Rhino, Autocad, Cura, 123D Make, Arduino IDE, App Inventor, Max MS, Microsoft Office Suite, OPERATING SYSTEMS: Mac and PC.",
         },
         {
           type: "PROGRAMMING",
-          kinds: "Javascript, React, HTML, CSS, Python. Familiar with: C++, C, Swift, Java, Hardware: Arduino, VEX IQ.",
+          kinds: "Javascript, React, HTML, CSS, Python. Familiar with: C++, C, Swift, Java, Hardware: Arduino, VEX IQ",
         },
         {
           type: "FABRICATION",
-          kinds: "Laser cutting, vinyl cutting, 3D printing, welding: [MIG, TIG, and torch], soldering, lost-material casting, etching, metal shop, enameling, powder coating, anodizing, forging.",
+          kinds: "Laser cutting, vinyl cutting, 3D printing, welding: [MIG, TIG, and torch], milling, soldering, casting, etching, metal shop, enameling, powder coating, anodizing, forging, turning, wood working, jewelry construction",
         },
       ]
 
