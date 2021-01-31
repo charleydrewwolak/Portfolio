@@ -9,29 +9,13 @@ class CV extends Component {
         <div className="t">
           <img src={require("./Headshot.jpeg")} alt="headshot"></img>
           <p className="as">
-            Charley Drew-Wolak is in his final year at Earlham College where he
-            is earning a BA in Art with a 3D Fabrication focus, a minor in
-            Computer Science, and a Digital Arts Integrated Pathway. Charley has
-            been a teaching assistant for multiple computer science, 3D
-            fabrication, and metalsmithing classes. As a part of his study,
-            Charley was awarded a four-year Bonner scholarship focused on
-            service and professional career development. Charley has had the
-            opportunity to regularly serve as a fabricator and graphic designer
-            at two museums, and serve on the Community Fund Committee as
-            Convenor. Recently, the Bonner Foundation supported Charley in
-            completing a Web-Development internship in Myanmar.
+          Charley Drew-Wolak is a professional metal artist living and working in Brooklyn, New York. He attended undergraduate at Earlham College where he earned a BA in Art with a 3D Fabrication focus, a minor in Computer Science, and a Digital Arts Integrated Pathway. Charley's artistic focus is at the intersection of computer science, 3D fabrication, and metalsmithing. Charley has participated in professional projects for companies and private artists, designing their websites and creating digital content. He has served as a fabricator and graphic designer at a museums, and participated in multiple KMAC Couture Fashion Shows, among other creative projects. 
           </p>
         </div>
         <div className="Bio">
           <strong>Artist Statement</strong>
           <p>
-            My work is an exploration of movement, playfulness, fire,
-            technology, and adornment. I collect skills, techniques, and ideas
-            to maximize my creative potential and put the fab in fabrication.
-            Exploring the nexus of the visual, digital, and performed, I look at
-            how these elements interact. I believe innovation occurs when we
-            destroy the illusion of separation; when we consider how different
-            disciplines intersect.
+            
           </p>
         </div>
       </div>
